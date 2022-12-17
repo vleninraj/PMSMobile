@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportsActivity">
+
+    <TextView
+        android:id="@+id/txtreportscap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Reports"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relreports"
+        android:layout_below="@id/txtreportscap"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:fontFamily="@font/nunito_regular"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Property Balance"
+            android:id="@+id/btnPropertyBalance"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"/>
+        <Button
+            android:fontFamily="@font/nunito_regular"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnPropertyBalance"
+            android:text="CLOSE"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnclosereports"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+</RelativeLayout>

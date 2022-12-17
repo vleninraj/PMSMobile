@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VillaBalanceActivity">
+
+    <TextView
+        android:id="@+id/txtreccap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Property Balance Report"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/relproperty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtreccap"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <ImageView
+            android:fontFamily="@font/nunito_regular"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:src="@drawable/customericon"
+            android:id="@+id/cashbankimage"
+            />
+        <TextView
+            android:fontFamily="@font/nunito_regular"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/cashbankimage"
+            android:hint="Select Property"
+            android:id="@+id/txtpropertycap"
+            android:paddingLeft="5dp"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/txtproperty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtpropertycap"
+            android:fontFamily="@font/nunito_regular" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relproperty"
+        android:id="@+id/relsaveclose"
+        >
+        <Button
+            android:fontFamily="@font/nunito_regular"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="SHOW"
+            android:id="@+id/btnshow"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"/>
+        <Button
+            android:fontFamily="@font/nunito_regular"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnshow"
+            android:text="CLOSE"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnclose"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+</RelativeLayout>
